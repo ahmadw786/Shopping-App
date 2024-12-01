@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+        <!-- Text Sizes -->
+        <dimen name="text_size_small">12sp</dimen>
+        <dimen name="text_size_medium">16sp</dimen>
+        <dimen name="text_size_large">20sp</dimen>
+
+        <!-- Margins -->
+        <dimen name="margin_small">8dp</dimen>
+        <dimen name="margin_medium">16dp</dimen>
+        <dimen name="margin_large">24dp</dimen>
+
+        <!-- Padding -->
+        <dimen name="padding_small">8dp</dimen>
+        <dimen name="padding_medium">16dp</dimen>
+        <dimen name="padding_large">24dp</dimen>
+
+        <!-- Heights and Widths -->
+        <dimen name="button_height">48dp</dimen>
+        <dimen name="input_field_height">56dp</dimen>
+        <dimen name="icon_size">24dp</dimen>
+
+
+</resources>

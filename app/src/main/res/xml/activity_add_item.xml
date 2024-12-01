@@ -1,0 +1,59 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/margin_large"
+    tools:context=".AddItemActivity">
+
+    <EditText
+        android:id="@+id/itemName"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/input_field_height"
+        android:hint="@string/item_name"
+        android:padding="@dimen/padding_medium"
+        android:background="@drawable/input_background"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_marginBottom="@dimen/margin_medium" />
+
+    <EditText
+        android:id="@+id/itemQuantity"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/input_field_height"
+        android:hint="@string/item_quantity"
+        android:padding="@dimen/padding_medium"
+        android:background="@drawable/input_background"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@id/itemName"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_marginBottom="@dimen/margin_medium" />
+
+    <EditText
+        android:id="@+id/itemPrice"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/input_field_height"
+        android:hint="@string/item_price"
+        android:padding="@dimen/padding_medium"
+        android:background="@drawable/input_background"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toBottomOf="@id/itemQuantity"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_marginBottom="@dimen/margin_large" />
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/button_height"
+        android:text="@string/add_item_button"
+        android:textColor="@color/buttonText"
+        android:backgroundTint="@color/colorPrimary"
+        app:layout_constraintTop_toBottomOf="@id/itemPrice"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

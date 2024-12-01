@@ -1,0 +1,88 @@
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/margin_large"
+        tools:context=".LoginActivity">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/login_title"
+            android:textSize="@dimen/text_size_large"
+            android:textColor="@color/colorTextPrimary"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintVertical_bias="0.1" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/input_field_height"
+            android:hint="@string/email_hint"
+            android:padding="@dimen/padding_medium"
+            android:background="@drawable/input_background"
+            android:inputType="textEmailAddress"
+            app:layout_constraintTop_toBottomOf="@id/title"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_marginTop="@dimen/margin_large" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/input_field_height"
+            android:hint="@string/password_hint"
+            android:padding="@dimen/padding_medium"
+            android:background="@drawable/input_background"
+            android:inputType="textPassword"
+            app:layout_constraintTop_toBottomOf="@id/email"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_marginTop="@dimen/margin_medium" />
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/button_height"
+            android:text="@string/login_button"
+            android:textColor="@color/buttonText"
+            android:backgroundTint="@color/colorPrimary"
+            app:layout_constraintTop_toBottomOf="@id/password"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_marginTop="@dimen/margin_large" />
+
+        <Button
+            android:id="@+id/registerButton"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/button_height"
+            android:text="@string/register_button"
+            android:textColor="@color/buttonText"
+            android:backgroundTint="@color/colorAccent"
+            app:layout_constraintTop_toBottomOf="@id/loginButton"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_marginTop="@dimen/margin_medium" />
+
+        <TextView
+            android:id="@+id/forgotPasswordButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/forgot_password"
+            android:textColor="@color/colorPrimaryDark"
+            app:layout_constraintTop_toBottomOf="@id/registerButton"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintMarginTop="@dimen/margin_medium" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
